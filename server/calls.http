@@ -1,0 +1,27 @@
+POST http://localhost:5000/users
+content-type: application/json
+
+{
+    "email": "test@mail.com",
+    "givenName": "test",
+    "familyName": "test"
+}
+
+###
+
+GET http://localhost:5000/users
+
+###
+
+DELETE http://localhost:5000/users/:id
+
+###
+
+PATCH http://localhost:5000/users/:id
+content-type: application/json
+
+{
+    "email": "john@mail.com",
+    "givenName": "John",
+    "familyName": "Doe"
+}
